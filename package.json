@@ -15,7 +15,7 @@
     "lint:check": "npx @biomejs/biome lint .",
     "prepare": "husky install",
     "preview": "vite preview",
-    "test": "vitest run ./src",
+    "test": "vitest run ./src --passWithNoTests",
     "test:ui": "vitest --ui ./src",
     "test:watch": "vitest ./src",
     "typecheck": "tsc --noEmit -p . --pretty"
