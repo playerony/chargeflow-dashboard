@@ -19,7 +19,6 @@
   right: 0;
   bottom: 0;
   background-color: var(--grey-200);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 16px;
   border: 1px solid var(--grey-300);
@@ -33,7 +32,6 @@
   left: -1px;
   top: -1px;
   background-color: var(--grey-100);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
   border: 1px solid var(--grey-400);
@@ -44,7 +42,5 @@
 }
 
 .switch__input:checked + .switch__slider:before {
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
   transform: translateX(10px);
 }
