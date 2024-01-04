@@ -1,6 +1,6 @@
 # chargeflow dashboard
 
-Firstly I was focused on setuping entire project, so here we have:
+Firstly I was focused on setuping entire project, so here we have (Maintainability first approach):
 
 - **biome** as a blazingly fast rust-based formatter and linter,
 - **vite** for code bunding,
