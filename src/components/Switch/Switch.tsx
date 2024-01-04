@@ -1,9 +1,10 @@
-import { ChangeEvent, FC } from "react";
+import { ChangeEvent, FC, ReactNode } from "react";
 import "./Switch.styles.css";
 
 interface SwitchProps {
   checked: boolean;
   onChange: (checked: boolean) => void;
+  rightChildren?: ReactNode;
 }
 
 export const Switch: FC<SwitchProps> = ({ checked, onChange }) => {
