@@ -1,0 +1,57 @@
+:root {
+  --grey-100: #F7FAFC;
+  --grey-200: #E3E8EE;
+  --grey-300: #D9DCE1;
+  --grey-400: #C2C7CF;
+  --grey-500: #A3ACB9;
+  --grey-600: #697386;
+  --grey-700: #4F566B;
+  --grey-800: #3C4257;
+  --grey-900: #1A1F36;
+
+  --blue: #5469D4;
+  --purple: #635CFF;
+  --dark-green: #0E6245;
+  --light-green: #CBF4C9;
+  --dark-yellow: #9C3F0F;
+  --light-yellow: #F8E5BA;
+
+  --spacing-6: 0.375rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-14: 0.875rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-28: 1.75rem;
+  --spacing-36: 2.25rem;
+  --spacing-40: 2.5rem;
+
+  /* I didn't get any font files so I will use it instad: 
+    -apple-system — San Francisco in Safari (on Mac OS X and iOS); Neue Helvetica and Lucida Grande on older versions of Mac OS X.
+    system-ui — default UI font on a given platform.
+    BlinkMacSystemFont — equivalent of -apple-system, for Chrome on Mac OS X.
+    "Segoe UI" — Windows (Vista+) and Windows Phone.
+    Roboto — Android (Ice Cream Sandwich (4.0)+) and Chrome OS.
+    Ubuntu — all versions of Ubuntu.
+  */
+  --font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--grey-100);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
