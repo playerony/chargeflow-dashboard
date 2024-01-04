@@ -1,0 +1,40 @@
+.dashboard-chart-card {
+  display: flex;
+  gap: var(--spacing-8);
+  flex-direction: column;
+}
+
+.dashboard-chart-card__header,
+.dashboard-chart-card__details {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-chart-card__title,
+.dashboard-chart-card__action-button {
+  cursor: pointer;
+}
+
+.dashboard-chart-card__title:hover,
+.dashboard-chart-card__action-button:hover {
+  color: var(--blue);
+}
+
+.dashboard-chart-card__cost {
+  color: var(--grey-600);
+}
+
+.dashboard-chart-card__chart {
+  width: 300px;
+  color: var(--grey-700);
+}
+
+.dashboard-chart-card__chart--full-width {
+  width: 100%;
+}
+
+.dashboard-chart-card--full-width div {
+  width: 100%;
+}

@@ -11,7 +11,7 @@ Firstly I was focused on setuping entire project, so here we have (Maintainabili
 
 # How to check it?
 
-You can visit Vercel url: **[https://chargeflow-dashboard.vercel.app](https://chargeflow-dashboard.vercel.app)
+You can visit Vercel url: **[https://chargeflow-dashboard.vercel.app](https://chargeflow-dashboard.vercel.app)**
 
 # How to run it?
 

@@ -2,7 +2,3 @@
   padding-bottom: var(--spacing-20);
   border-bottom: var(--default-border);
 }
-
-.dashboard-content-with-title__content {
-  padding: var(--spacing-20) 0;
-}
