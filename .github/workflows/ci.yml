@@ -1,0 +1,44 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Cache node_modules and Yarn cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/.cache/yarn
+            .yarn/cache
+          key: ${{ runner.os }}-node-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-yarn-
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ matrix.node-version }}"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Typecheck, format check, and lint
+        run: |
+          yarn typecheck &
+          yarn format:check &
+          yarn lint:check &
+          wait
+
+      - name: Test
+        run: yarn test
