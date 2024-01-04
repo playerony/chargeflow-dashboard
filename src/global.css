@@ -26,6 +26,8 @@
   --spacing-36: 2.25rem;
   --spacing-40: 2.5rem;
 
+  --default-transition: all 150ms ease;
+
   /* I didn't get any font files so I will use it instad: 
     -apple-system — San Francisco in Safari (on Mac OS X and iOS); Neue Helvetica and Lucida Grande on older versions of Mac OS X.
     system-ui — default UI font on a given platform.
@@ -38,6 +40,7 @@
 }
 
 html {
+  height: 100vh;
   font-size: 16px;
   box-sizing: border-box;
 }

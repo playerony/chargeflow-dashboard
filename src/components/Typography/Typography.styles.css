@@ -1,0 +1,66 @@
+.typography {
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  color: var(--grey-900);
+  font-family: var(--font-family);
+  transition: var(--default-transition);
+}
+
+.typography--variant-h1 {
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.75rem;
+}
+
+.typography--variant-h2 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.typography--variant-p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.typography--variant-span {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+}
+
+.typography--display-block {
+  display: block;
+}
+
+.typography--display-inline-block {
+  display: inline-block;
+}
+
+.typography--font-size-xxs {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+
+.typography--font-size-xs {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+}
+
+.typography--font-size-sm {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.typography--font-size-md {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.typography--font-size-lg {
+  line-height: 2rem;
+  font-size: 1.75rem;
+}
+
+.typography--strong {
+  font-weight: 700;
+}
