@@ -8,8 +8,8 @@
 
 .dashboard__content {
   grid-area: content;
-  padding: var(--spacing-20);
   background-color: var(--white);
+  padding: var(--spacing-16) var(--spacing-20);
 }
 
 @media (min-width: 1024px) {
@@ -22,5 +22,11 @@
       'sidebar content content content content';
     grid-template-columns: 270px repeat(4, 1fr);
     grid-template-rows: 60px repeat(4, 1fr);
+  }
+
+  .dashboard__content {
+    grid-area: content;
+    background-color: var(--white);
+    padding: var(--spacing-32) var(--spacing-40);
   }
 }
