@@ -2,7 +2,7 @@
   display: none;
   grid-area: sidebar;
   background-color: var(--grey-100);
-  border-right: 1px solid var(--grey-200);
+  border-right: var(--default-border);
   padding: var(--spacing-12) var(--spacing-20);
 }
 
